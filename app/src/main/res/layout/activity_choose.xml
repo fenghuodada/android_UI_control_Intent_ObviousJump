@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background1"
+    tools:context=".Choose">
+
+
+    <TextView
+
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:gravity="left"
+        android:text="下方登录:"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="409dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="317dp"
+        android:layout_height="141dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/man_head1"
+        tools:ignore="MissingConstraints"
+        android:onClick="login"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="467dp" />
+
+    <Button
+        android:id="@+id/b_arrary_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="Array_list"
+        android:text="文本列表"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/b_simple_list"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/b_base_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:onClick="Base"
+        android:text="复杂列表"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/b_simple_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/b_simple_list"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/b_simple_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="28dp"
+        android:onClick="Simple"
+        android:text="简单列表"
+        android:layout_marginLeft="20dp"
+        app:layout_goneMarginRight="20dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/b_arrary_list"
+        app:layout_constraintRight_toLeftOf="@id/b_base_list"
+        app:layout_constraintRight_toRightOf="@id/b_arrary_list"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
